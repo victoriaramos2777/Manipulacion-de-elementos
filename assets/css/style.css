@@ -4,6 +4,7 @@
 
 }
 
+
 .principal,
 .form{
     display: flex;
@@ -19,10 +20,12 @@
 .tranquilo{
     background-color: aqua;
 }
-.feliz{
+.feliz i{
     background-color:yellow;  
 
 }
+
+
 .triste{
     background-color: blue;
 }
