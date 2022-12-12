@@ -19,13 +19,16 @@
 
 .tranquilo{
     background-color: aqua;
+
 }
 .feliz {
-    background-color:yellow;  
-
+    background-color: yellow;
 }
 
-
+button{
+    background: none;
+    border: none;
+}
 .triste{
     background-color: blue;
 }
