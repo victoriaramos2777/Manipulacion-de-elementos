@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando JS </title>
+    <!--Mi Hoja De Estilos-->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
 </head>
+
 <body>
     <header id="header">
-        <h1 > ¿Como tesientes hoy?</h1>
+        <h1> ¿Como te sientes hoy?</h1>
     </header>
-    <main  id="main">
+    <main id="main">
         <section id="contenido-1" class="principal">
-            <img src="./assets/img/icons8-get-quote-48 (1).png"alt="imagen de comillas" id="img-1">
+            <img src="./assets/img/icons8-get-quote-48 (1).png" alt="imagen de comillas" id="img-1">
             <form id="form" class="form">
-                <input type="text" placeholder="cuentame como te sientes..." mane="sentimiento" required>
-                <label for=" emoji">Me siento ... </label>
-                <button type="submit" id="feliz" ><img src="https://img.icons8.com/emoji/48/null/smiling-face-with-smiling-eyes.png"/></button>
-                <button type="submit" id="triste"><img src="https://img.icons8.com/emoji/48/null/sad-but-relieved-face.png"/></button>
-                <button type="submit" id="tranquilo"><img src="https://img.icons8.com/emoji/48/null/relieved-face.png"/></button>
-                <button type="submit" id="enojado"><img src="https://img.icons8.com/emoji/48/000000/angry-face-emoji--v2.png"/></button>
+                <input id="sentimiento" type="text"                   placeholder="Cuentame como te sientes..."     mane="sentimiento"
+                    required>
+
+                <div id="contenedor-btns">
+                    <label for=" emoji">Me siento ... </label>
+                    <button type="submit"class="feliz-btn"><img class="feliz-btn"
+                            src="https://img.icons8.com/emoji/48/null/smiling-face-with-smiling-eyes.png" /></button>
+                    <button type="submit" class="triste-btn"><img class="triste-btn"
+                            src="https://img.icons8.com/emoji/48/null/sad-but-relieved-face.png" /></button>
+                    <button type="submit" class="tranquilo-btn"><img class="tranquilo-btn"
+                            src="https://img.icons8.com/emoji/48/null/relieved-face.png" /></button>
+                    <button type="submit" class="enojado-btn"><img class="enojado-btn"
+                            src="https://img.icons8.com/emoji/48/000000/angry-face-emoji--v2.png" /></button>
+                            <p id="estado de animo"></p>
+                </div>
             </form>
 
         </section>
     </main>
-  <!--mi hoja de js-->
-  <script src="./js/main.js" type="text/javascript"></script>
+    <!--mi hoja de js-->
+    <script src="./js/main.js" type="text/javascript"></script>
 </body>
+
 </html>
