@@ -27,7 +27,7 @@ main.addEventListener('click',(e) =>{
          insertarEstadoDeAnimo('Feliz');
     }
 
-    if(e.target.classList,contains('triste-btn')){
+    if(e.target.classList.contains('triste-btn')){
         body.removeAttribute('class');
         body.classList.add('triste');
          // Agregar la clase a la seccion
@@ -38,7 +38,7 @@ main.addEventListener('click',(e) =>{
           insertarEstadoDeAnimo('Triste');
     }
 
-    if(e.target.classList,contains('tranquilo-btn')){
+    if(e.target.classList.contains('tranquilo-btn')){
         body.removeAttribute('class');
         body.classList.add('tranquilo');
           // Agregar la clase a la seccion
