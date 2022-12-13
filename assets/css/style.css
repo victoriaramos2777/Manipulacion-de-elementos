@@ -8,7 +8,7 @@ body{
     background: #bbbff1;
     background: linear-gradient(to top, #6deec3 0%, #f0e6e6e5 100%);
     background-repeat: no-repeat;
-    height: 100px;;
+    height: 100vh;
 }
 
 #header {
@@ -19,12 +19,11 @@ body{
 
 #main{
     border:none;
- 
     border-radius: 10px;
     width: 100%;
     min-width: 200PX;
     max-width: 500PX;
-    height:200PX;
+    height:250px;
     margin: auto;
     background-color: rgb(82, 207, 207);
     box-shadow: inset 0 -0.3em 0.3em rgb(17, 17, 17), 0 0 0 0px rgb(17, 17, 17), 0.3em 0.3em 0.1em rgb(10, 10, 10);
@@ -34,8 +33,11 @@ body{
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-margin-top: 10%;
-   width: 60%;
+   margin-top: 10%;
+   width: 98%;
+   min-width: 200PX;
+   max-width: 500PX;
+   height: 250px;
    padding: 2%;
 
 }
@@ -44,32 +46,56 @@ margin-top: 10%;
     width: 90%;
     height:10px;
     background: none;
-    color: #fff;
+    color:white;
     border: none;
     outline-color: rgb(68, 68, 248);
     border-radius: 3px;
+    font-size: 1rem;
+    
 }
 
+
 #contenedor-btns{
-    width: 100%;
-    margin-top: 20%;
+    width: 98%;
+    margin-top: 8%;
     display: flex;
+    align-items: flex-end;
+    padding: 3%;
 }
 
 #img-1{
   width: 30px;
+  margin-top: 10%;
+}
+
+.me-siento{
+   background-color: #c4c4c8; 
+   color: #fff;
+    margin-right: 1%;
+}
+
+#estado-animo{
+    background-color: #c4c4c8;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 3%;
 }
 /*colores de fondo del body*/
 .enojado{
-    background-color: red;
+    background: linear-gradient(to bottom, #d4ede5 0%, #e51414e5 100%);
+    background-repeat: no-repeat;
+   
 }
 
 .tranquilo{
-    background-color: aqua;
+    background: linear-gradient(to bottom, #d4ede5 0%,rgb(19, 197, 200) 100%);
+    background-repeat: no-repeat;
 
 }
 .feliz {
-    background-color: yellow;
+    background: linear-gradient(to bottom, #d4ede5 0%,rgb(200, 128, 19) 100%);
+    background-repeat: no-repeat; 
+    
 }
 
 button{
@@ -77,17 +103,39 @@ button{
     border: none;
 }
 .triste{
-    background-color: blue;
+    background: linear-gradient(to bottom, #d4ede5 0%,rgb(10, 51, 126) 100%);
+    background-repeat: no-repeat;
 }
 
 /*colores de la seccion*/
 
 .enojado-s{
-    background-color:rgb(153, 51, 51);
-     width: 100%;
+    background-color:rgb(153, 51, 51); 
+     border-radius: 10px;
+     box-shadow: inset 0 -0.3em 0.3em rgb(17, 17, 17), 0 0 0 0px rgb(17, 17, 17), 0.3em 0.3em 0.1em rgb(10, 10, 10);
+    
 }
 
 .feliz-s{
-    background-color: rgb(179, 255, 0);
+    border-radius: 10px;
+    background-color:yellow;
+    width: 100%;
+    box-shadow: inset 0 -0.3em 0.3em rgb(17, 17, 17), 0 0 0 0px rgb(17, 17, 17), 0.3em 0.3em 0.1em rgb(10, 10, 10);
+    
+}
+
+.tranquilo-s{
+    border-radius: 10px;
+    background-color:aquamarine;
+    width: 100%;
+    box-shadow: inset 0 -0.3em 0.3em rgb(17, 17, 17), 0 0 0 0px rgb(17, 17, 17), 0.3em 0.3em 0.1em rgb(10, 10, 10);
+    
+}
+
+.triste-s{
+    border-radius: 10px;
+    background-color:blue;
+    width: 100%;
+    box-shadow: inset 0 -0.3em 0.3em rgb(17, 17, 17), 0 0 0 0px rgb(17, 17, 17), 0.3em 0.3em 0.1em rgb(10, 10, 10);
     
 }
