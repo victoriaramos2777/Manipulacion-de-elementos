@@ -4,7 +4,7 @@ const body = document.querySelector('body')
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const seccionPrincipal = document.getElementById('contenido-1');
-const contenidoBotones = document.getElementById('contenedor-btns')
+const contenidoBotones = document.getElementById('contenedor-btns');
 //input de la formas
 const sentimiento = document.getElementById('sentimiento');
 
@@ -68,28 +68,9 @@ function insertarEstadoDeAnimo(animo) {
 }
 
 
-//funcion para llamar la barra de menu
 
-function  agregarMenu() {
-    
-    const list = document.querySelector('.menu__links');
-    const menu = document.querySelector('.menu__hamburguer');
 
-    const addClick = ()=>{
-        listElements.forEach(element =>{
-            element.addEventListener('click', ()=>{
+
+
 
                 
-                let Menu = element.children[1];
-                let width = 0;
-                element.classList.toggle('menu__item');
-
-
-                if(subMenu.clientHeight === 0){
-                    height = subMenu.scrollHeight;
-                }
-
-            });
-        });
-    }
-}

@@ -166,7 +166,7 @@ button{
 
 .menu__links{
     height: 100%;
-    transition: transform .5s;
+
     
     display: flex;
 }
@@ -177,9 +177,6 @@ button{
     
 }
 
-.menu__item:hover{
-    
-}
 
 .menu__link{
     color: rgb(19, 19, 19);
@@ -197,7 +194,7 @@ button{
     align-items: center;
     padding: 0 15px;
     cursor: pointer;
-    display: none;
+    
 }
 
 .menu__img{
@@ -205,55 +202,4 @@ button{
     width: 36px;
 }
 
-@media (max-width:900px){
-    .menu__hamburguer{
-        display: flex;
-    }
-
-    .menu__item{
-    
-        overflow:hidden ;
-    }
-
-
-
-    .menu__links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: rgb(224, 220, 220);
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        --state-menu: translateX(100%);
-        --state-hambuerguer: scale(1);
-
-
-    }
-
-    .menu__links:target{
-        --state-menu: translateX(0);
-        --state-hambuerguer: scale(0);
-    }
-
-    .menu__links{
-        transform: unset;
-        width: 100%;
-    }
-
-    .menu__link{
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu__container{
-        margin: 0 auto;
-        width: 90%;
-
-    }
-
-}
+   
