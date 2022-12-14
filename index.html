@@ -12,18 +12,46 @@
 
 <body>
     <header id="header">
+        <nav class="menu__container">
+            <section class="menu__container">
+                <div class="menu__container__svg-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                    <path
+                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z">
+                    </path>
+                </svg>
+                <h1 class="menu__logo">OneMind</h1>
+            </div>
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">contactanos</a>
+                            </li>
+                </ul>           
+                            <div class="menu__hamburguer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(66, 65, 65);transform: ;msFilter:;" class="menu__img"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                            </div>
+                        </section>
+
+                           
+                      
+        </nav>
         <h1> ¿Como te sientes hoy?</h1>
     </header>
     <main id="main">
         <section id="contenido-1" class="principal">
             <img src="./assets/img/icons8-get-quote-48 (1).png" alt="imagen de comillas" id="img-1">
             <form id="form" class="form">
-                <input id="sentimiento" type="text" placeholder="Cuentame como te sientes..."  mane="sentimiento"
+                <input id="sentimiento" type="text" placeholder="Cuentame como te sientes..." mane="sentimiento"
                     required>
 
                 <div id="contenedor-btns">
                     <label for=" emoji" class="me-siento">Me siento ... </label>
-                    <button type="submit"class="feliz-btn"><img class="feliz-btn"
+                    <button type="submit" class="feliz-btn"><img class="feliz-btn"
                             src="https://img.icons8.com/emoji/48/null/smiling-face-with-smiling-eyes.png" /></button>
                     <button type="submit" class="triste-btn"><img class="triste-btn"
                             src="https://img.icons8.com/emoji/48/null/sad-but-relieved-face.png" /></button>
@@ -31,7 +59,7 @@
                             src="https://img.icons8.com/emoji/48/null/relieved-face.png" /></button>
                     <button type="submit" class="enojado-btn"><img class="enojado-btn"
                             src="https://img.icons8.com/emoji/48/000000/angry-face-emoji--v2.png" /></button>
-                            <p id="estado-animo"></p>
+                    <p id="estado-animo"></p>
                 </div>
             </form>
 

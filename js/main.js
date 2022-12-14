@@ -45,6 +45,7 @@ main.addEventListener('click',(e) =>{
     seccionPrincipal.classList.remove('enojado-s', 'feliz-s', 'triste-s');
     seccionPrincipal.classList.add('tranquilo-s');
 
+
     // Llamar funcion para agregar texto
     insertarEstadoDeAnimo('Tranquilo');
 
@@ -64,4 +65,31 @@ main.addEventListener('click',(e) =>{
 function insertarEstadoDeAnimo(animo) {
     const texto = document.getElementById('estado-animo');
     texto.textContent = animo;
+}
+
+
+//funcion para llamar la barra de menu
+
+function  agregarMenu() {
+    
+    const list = document.querySelector('.menu__links');
+    const menu = document.querySelector('.menu__hamburguer');
+
+    const addClick = ()=>{
+        listElements.forEach(element =>{
+            element.addEventListener('click', ()=>{
+
+                
+                let Menu = element.children[1];
+                let width = 0;
+                element.classList.toggle('menu__item');
+
+
+                if(subMenu.clientHeight === 0){
+                    height = subMenu.scrollHeight;
+                }
+
+            });
+        });
+    }
 }
